@@ -1,0 +1,381 @@
+
+/* 
+    Created on : 19/10/2017, 05:55:01 م
+    Author     : Programmer
+*/
+
+/* start upper-bar */
+.upper-bar
+{
+    background-color: #08526d;
+    color: #fff;
+    padding: 10px;
+}
+.upper-bar a {
+    color: #fff ;
+}
+/* end upper-bar */
+
+/* start navbar */
+.navbar-brand span:first-child{
+    font-weight:bold;
+    color: #08526d;
+}
+.navbar-brand span:last-child{
+    color: #dc3545;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-left: 20px;    
+    color: #dc3545;
+}
+.navbar-nav .active > .nav-link 
+{
+    color: #ec1c23 !important;
+}
+/* end navbar */
+
+/* start carsolue background */
+.carousel-bg {
+    background-size: cover ;
+    /*background-attachment: local ;*/
+    background-repeat:  no-repeat;
+    height: 80%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#carousel-bg-img1{
+    -webkit-transition: all 1s ease-in;
+    background-image: url(../img/bg-1.jpg);
+}
+#carousel-bg-img2{
+    -webkit-transition: all 1s ease-in;
+    background-image: url(../img/bg-2.jpg);
+}
+#carousel-bg-img3{
+    -webkit-transition: all 1s ease-in;
+    background-image: url(../img/bg-3.jpg);
+}
+.carousel-bg-overly
+{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    min-height: 350px;
+    background-color: #000;
+    opacity: 0.5 ;
+    z-index: 2;
+}
+.carousel-bg-text{
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    font-size: 60px;
+}
+@media (max-width: 992px) {
+    .carousel-bg-text{
+        font-size: 42px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-bg-text{
+        font-size: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-bg-text{
+        font-size: 24px;
+    }
+}
+.carousel-bg-text span {
+    padding: 0 10px 5px ;
+    background-color: #dc3545;
+    border-radius: 4px;
+}
+.carousel-bg-text p {
+    font-size: 50px;
+}
+@media (max-width: 992px) {
+    .carousel-bg-text p {
+        font-size: 36px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-bg-text p {
+        font-size: 26px;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-bg-text p {
+        font-size: 20px;
+    }
+}
+/* end Carsoule background */
+
+/* Start system-functions */
+.system-functions {
+    padding-bottom: 60px;
+}
+.system-functions > h1 {
+    margin-top: 50px;
+}
+.system-functions p {
+    margin-bottom: 40px;
+}
+@media (min-width: 1200px)
+{
+    .system-functions .col-xl-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+.system-functions img {
+    margin-bottom: 10px;
+}
+.system-functions h4 {
+    margin-bottom: 30px;
+}
+/* End system-functions */
+
+/* Start roles */
+.roles {
+    background:#f5f5f5;
+    padding-bottom: 30px;
+}
+.roles-title {
+    border-radius: 0 0 50% 50%;
+    background-color: #08526d;
+    color : #fff ;
+    margin-bottom: 20px;    
+    padding: 10px;
+}
+
+/* for modal image*/ 
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    /*    max-width: 700px;*/
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .close {
+        right: 25px;
+        top: 5px;
+        font-size: 30px;
+    }
+}
+/*end model image*/ 
+/* End roles */
+
+/* start features */
+.features  {
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+.features h1:first-child {
+    margin-bottom: 40px;
+}
+.features i {
+    color: #08526d;
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px 0;
+}
+/* end features */
+
+/* princing */
+.price {
+    padding-bottom: 80px;
+    background-image: url(../img/pricing.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 768px)
+{
+    .price .container {
+        max-width: 100%;
+    }
+}
+.price .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+.price .card-body h1 {
+    margin:20px 0;
+    padding: 10px 0;
+}
+.price .card-body p {
+    margin-bottom: 40px;
+}
+.price .card-body .btn {
+    min-width: 140px ;
+}
+.price-title {
+    border-radius: 0 0 50% 50%;
+    background-color: #08526d;
+    color : #fff ;
+    margin-bottom: 30px;    
+    padding: 10px;
+}
+.price .card-title h1:first-child{
+    margin-top: 40px;
+}
+.price-desc{
+    margin-bottom: 40px;
+}
+.price .card-title , .price h4 ,card-body{
+    color: #08526d !important;
+}
+.price-active {
+    background-color:#dc3545 ;
+    color: #fff;
+}
+/*end pricing*/ 
+
+/* Start reports */
+.reports {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.reports p:first-of-type {
+    margin-bottom:50px;
+}
+.reports li:before {
+    font-family:'FontAwesome';
+    content: "\f00c";
+    margin-right: 5px;
+}
+.items-report {
+    padding: 10px; 
+}
+/* End reports */
+
+/* Start contact-us */
+.contact-us {
+    background-image: url(../img/contact-us.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.contact-us-titlle{
+    padding: 40px 0;
+}
+.contact-us a {
+    color: #fff;
+}
+.contact-us .form-control{
+    background-color: transparent;  
+    color: #fff;
+}
+.contact-us option {
+    color: #000;
+}
+.contact-us .contact-us-warning{
+    font-size: 20px;
+    color: red;
+    margin:10px 0;
+}
+.contact-us-notes p:first-child {
+    margin-top: 30px;
+    max-width: 350px;
+}
+.contact-us-notes p:last-child {
+    margin-bottom:40px;
+    margin-top: 30px;
+}
+/* End contact-us */
+
+/* Start footer */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footer h1 span:first-child
+{
+    font-weight: bold;
+    color: #08526d;
+}
+.footer h1 span:last-child 
+{
+    color: #dc3545;
+}
+.footer h2 {
+    margin-bottom:  20px;
+}
+.footer li a{
+    color: #000;
+}
+.footer .footer-links li:before {
+    font-family:'FontAwesome';
+    content: "\f105";
+    margin-right: 5px;
+}
+/* End footer */
+
+/* Start copyright */
+.copyright {
+    background-color: #08526d;
+    color: #fff;
+    padding: 10px;
+}
+/* End copyright */
