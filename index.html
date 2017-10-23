@@ -14,11 +14,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center text-sm-left">
-                        <i class="fa fa-phone"> +218927784098 </i>&nbsp&nbsp
+                        <i class="fa fa-phone"> <a href="callto:+218927784098">+218927784098</a> </i>&nbsp&nbsp
                         <i class="fa fa-envelope"><a href="mailto:info@sysytem.com?subject=Contact"> mail@email.com</a></i>
                     </div>
                     <div class="col-auto text-right">
-                        <a href=""> <i class="fa fa-sign-in"></i> Loging </a>
+                        <a href="login.php"> <i class="fa fa-sign-in"></i> Loging </a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.php">
                     <h1><span>Al-</span><span>Farouk</span></h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,12 +36,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="main-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Download</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Explanations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="download.php">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="buy.php">Buy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="explanations.php">Explanations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="FAQ.php">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.php">Support</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,6 +50,8 @@
 
 <!-- Start carousel-bg -->
 <div class="carousel-bg" id="carousel-bg-img1">
+    <!-- this below div to use it in js to check if continue change bg-img -->
+    <div id="carousel-bg-doesnot-exist"></div>
     <div class="carousel-bg-overly"></div>
     <div class="carousel-bg-text text-center">
         You can try the program <span> 20 days </span>
@@ -61,7 +63,7 @@
 <!-- Start System functions  -->
 <div class="system-functions text-center">
     <h1>System functions</h1>
-    <p>With our program you can management</p>
+    <p>With our program you can manage</p>
     <div class="container">
         <div class="row">   
             <div class="col-sm-4 col-lg-3 col-xl-2">
@@ -138,11 +140,11 @@
         </div>
         <div class="col-sm-2 col-lg-3"></div>
     </div><!-- Trigger the Modal -->
-    <img id="myImg" class="img img-fluid" src="img/roles.PNG" alt="Trolltunga, Norway">
+    <img id="myImg" onclick="myImg_show();" class="img img-fluid" src="img/roles.PNG" alt="Trolltunga, Norway">
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- The Close Button -->
-        <span class="close">&times;</span>
+        <span class="close" onclick="myImg_close();">&times;</span>
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
         <!-- Modal Caption (Image Text) -->
@@ -164,27 +166,27 @@
             <div class="col-sm-6 col-md-4">
                 <i class="fa fa-user-secret fa-4x" ></i>
                 <h4>Detecting hacking attempts</h4>
-                <p>If anyone try to login system and entered password wrong 4 times, it will be register in system (username with passwords and picture of camera if exists)</p>
+                <p>If anyone tries to log into the system and enters the wrong password 4 times, these attempts will be registered in the system (the user name with passwords and a camera picture if one exists</p>
             </div>   
             <div class="col-sm-6 col-md-4">
                 <i class="fa fa-bell fa-4x" ></i>
                 <h4>Notifications</h4>
-                <p>if there is something important ( products going to be or finished/expired also hacking attempts) you will get notifications on login</p>
+                <p>If there is anything important to report such as discontinued products or expiration dates as well as hacking attempts, you will receive notification on login</p>
             </div>           
             <div class="col-sm-6 col-md-4">
                 <i class="fa fa-lock fa-4x" ></i>
-                <h4>Encrypt passwords</h4>
-                <p>If anyone stole database and tried to read passwords to login to the system ,he/she finds passwords encrypted</p>
+                <h4>Encrypted passwords</h4>
+                <p>If anyone has stolen a database and tries to read passwords to log into the system, he or she will find the passwords encrypted</p>
             </div>           
             <div class="col-sm-6 col-md-4">
                 <i class="fa fa-clock-o fa-4x" ></i>
                 <h4>Operations log</h4>
-                <p>Register every addition operation in system (like add new product) and who did it and when</p>
+                <p>Register every operation added to the system such as the addition of a new product, who entered it and when</p>
             </div>           
             <div class="col-sm-6 col-md-4">
                 <i class="fa fa-pencil-square fa-4x" ></i>
-                <h4>Register specific operations</h4>
-                <p>Can register specific operation ( update /delete something and take report ) system and who did it and when</p>
+                <h4>Registration of specific operations</h4>
+                <p>Specific operations can be registered into the system such as updates, deletions, and reports as well as who entered them and when</p>
             </div>           
         </div>
     </div>
@@ -379,6 +381,7 @@
 <!-- End Contact us -->
 
 
+<button onclick="topFunction()" id="btn-to-top" title="Go to top"><i class="fa fa-arrow-up"></i></button>
 
 <footer class="footer">
     <div class="container">
@@ -392,19 +395,19 @@
             <div class="col-sm-6 col-md-3">
                 <h2>Links</h2>
                 <ul class="list-unstyled footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Buy</a></li>
-                    <li><a href="#">Explanations</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="download.php">Download</a></li>
+                    <li><a href="buy.php">Buy</a></li>
+                    <li><a href="explanations.php">Explanations</a></li>
+                    <li><a href="FAQ.php">FAQ</a></li>
+                    <li><a href="support.php">Support</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-md-3">
                 <h2> Contact us </h2>
                 <ul class="list-unstyled">
                     <li><i class="fa fa-map-marker"></i> Libya Tripoli</li>
-                    <li><i class="fa fa-phone"></i> +32392933838</li>
+                    <li><i class="fa fa-phone"> <a href="callto:+218927784098">+218927784098</a></i></li>
                     <li><i class="fa fa-envelope"></i><a href="mailto:info@sysytem.com?subject=Contact"> mail@email.com</a></li>
                     <li><i class="fa fa-globe"></i><a href=""> www.alfarouk.com</a></li>
                 </ul>
@@ -419,7 +422,8 @@
 </div>
 
 
-<script src="js/jquery-3.2.1.slim.min.js"></script>
+<!--<script src="js/jquery-3.2.1.slim.min.js"></script>-->
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/main.js"></script> 
