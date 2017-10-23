@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SMS</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <!-- Start upper bar -->
+        <div class="upper-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center text-sm-left">
+                        <i class="fa fa-phone"> <a href="callto:+218927784098">+218927784098</a> </i>&nbsp&nbsp
+                        <i class="fa fa-envelope"><a href="mailto:info@sysytem.com?subject=Contact"> mail@email.com</a></i>
+                    </div>
+                    <div class="col-auto text-right">
+                        <a href="login.php"> <i class="fa fa-sign-in"></i> Loging </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End upper bar -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <h1><span>Al-</span><span>Farouk</span></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="buy.html">Buy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="explanations.html">Explanations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End navbar -->
+
+
+<!-- Start FAQ -->
+<div class="FAQ">
+    <div class="container">
+        <div class="FAQ-title text-center">Frequently Asked Questions</div>
+        <div class="card border-light">
+            <a onclick="change_state_faq(this);" class="card-header cursor-pointer"><i class="fa fa-minus-circle fa-lg"></i> question one #1</a>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card border-light">
+            <a onclick="change_state_faq(this);" class="card-header cursor-pointer"><i class="fa fa-minus-circle fa-lg"></i> question one #2</a>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card border-light">
+            <a onclick="change_state_faq(this);" class="card-header cursor-pointer"><i class="fa fa-minus-circle fa-lg"></i> question one #3</a>
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+
+        <div class="add-question row">
+            <div class="col-md-1 col-xl-2"></div>
+            <div class="col-md-10 col-xl-8">
+                <div class="bg-danger add-question-title text-center">Add new question</div>
+                <form id="main-contact-form" name="contact-form" method="post" action="#">
+                    <div class="form-group">
+                        <input type="email" maxlength="64" name="subject" class="form-control" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" maxlength="2000" id="message" class="form-control" rows="6" placeholder="Write your question..." required="required"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1 col-xl-2"></div>
+        </div>
+
+    </div>
+</div>
+<!-- End FAQ -->
+
+        
+<button onclick="topFunction()" id="btn-to-top" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h1><span>Al-</span><span>Farouk</span></h1>
+<!--                <h1><span>الـ</span><span>فاروق</span></h1>-->
+                <p>Program to systems management like ( store , market , shop ...etc ) or any small or medium business , you can discover who works good and how works bad , you can analysis your business and discover things which make your bussiness better ,with many things to make hard things easy </p>
+                <p>We can update the program as you would like ( add/update/delete things )</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h2>Links</h2>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="explanations.html">Explanations</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h2> Contact us </h2>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker"></i> Libya Tripoli</li>
+                    <li><i class="fa fa-phone"> <a href="callto:+218927784098">+218927784098</a></i></li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:info@sysytem.com?subject=Contact"> mail@email.com</a></li>
+                    <li><i class="fa fa-globe"></i><a href=""> www.alfarouk.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright text-center">
+    Copyright 2017 &copy; Al-farouk
+</div>
+</div>
+
+
+<!--<script src="js/jquery-3.2.1.slim.min.js"></script>-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/main.js"></script> 
+</body>
+</html>
