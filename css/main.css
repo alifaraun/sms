@@ -4,6 +4,16 @@
     Author     : Programmer
 */
 
+/* Start general styles */
+.msg-danger {
+    color: red;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+/* End general styles */
+
+
 /* start upper-bar */
 .upper-bar
 {
@@ -168,14 +178,13 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 99; /* Sit on top */
     padding-top: 40px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 /* Modal Content (Image) */
@@ -285,7 +294,7 @@
 }
 .price-active {
     background-color:#dc3545 ;
-    color: #fff;
+    color: #fff !important;
 }
 /*end pricing*/ 
 
@@ -318,7 +327,14 @@
     padding-bottom: 50px;
 }
 .contact-us-titlle{
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.contact-us-q-exists {
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .contact-us a {
     color: #fff;
@@ -344,6 +360,33 @@
     margin-top: 30px;
 }
 /* End contact-us */
+
+/* Start buuton go to top */
+#btn-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 98; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 30px;
+    opacity: 0.7;
+}
+@media (max-width: 576px) {
+    #btn-to-top {
+        font-size: 20px;
+    }
+}
+#btn-to-top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* End button go to top */
 
 /* Start footer */
 .footer {
@@ -379,3 +422,167 @@
     padding: 10px;
 }
 /* End copyright */
+
+
+/* Start Downlad */
+.download {
+    padding-top:60px;
+    padding-bottom: 80px;
+    background-image: url(../img/bg-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 768px)
+{
+    .download .container {
+        max-width: 100%;
+    }
+}
+.download .rquired{
+    border-width: 2px;
+    border-color: #dc3545;
+    border-style: solid ;
+    padding-bottom: 20px;
+}
+.rquired-title {
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+@media (max-width: 400px)
+{
+    .rquired-title {
+        font-size: 26px;
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+}
+.download .rquired h4  {
+    padding: 20px 0;
+}
+.download .rquired p {
+    padding: 20px 0;
+    min-height: 90px; 
+}
+.download .al-frouk {
+    margin-top: 50px;
+}
+.download .al-frouk a:last-child {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* End Downlad */
+
+
+/* start buy */
+.buy {
+    background-image: url(../img/bg-1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0
+}
+.buy-price-title {
+    color: white;
+    background-color: #2090ff;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 30px 30px 0px 0px;
+}
+.buy .card-text {
+    min-height: 75px;
+}
+.buy-send-request {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* End buy */
+
+
+/* Start FAQ */
+.FAQ {
+    padding-top:60px;
+    padding-bottom: 80px;
+    background-image: url(../img/bg-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FAQ-title {
+    color: white;
+    background-color: #2090ff;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px 30px 0px 0px;
+    font-size:36px;
+}
+@media (max-width:540px){
+    .FAQ-title {
+        font-size:26px;
+    }
+}
+@media (max-width:400px){
+    .FAQ-title {
+        font-size:20px;
+    }
+}
+.add-question {
+    padding-top: 30px;
+}
+.add-question-title {
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 26px
+}
+/* End FAQ */
+
+
+/* Start expanations */
+.explanation
+{
+    padding-top:60px;
+    padding-bottom: 80px;
+    background-image: url(../img/bg-3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.explanation-title {
+    color: white;
+    background-color: #2090ff;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px 30px 0px 0px;
+    font-size:36px;
+}
+.explanation-box {
+    background: #fff ;
+    padding: 30px 10px;
+}
+.explanation-box a{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 20px 0;
+}
+/* End expanations */
+
+
+/* Start login */
+.login{
+    background-image: url(../img/bg-1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+/* End login */
